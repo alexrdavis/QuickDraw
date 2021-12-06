@@ -20,16 +20,20 @@ window.addEventListener("load", render)
 let painting = false
 
 // Functions
+
+// Start
 function startPosition(p) {
     painting = true
     paint(p)
 }
 
+// End
 function endPosition() {
     painting = false
     context.beginPath()
 }
 
+// Paint
 function paint(p) {
     if(!painting) return
     context.lineCap = 'round'
